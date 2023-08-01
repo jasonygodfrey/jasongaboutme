@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222; /* Set the background color to matte black */
+}
+
+#gif.walking-animation {
+    position: relative;
+    animation: walk-in 5s forwards;
+    max-width: 120px; /* Adjust the width as needed */
+}
+
+#gif.waving-animation {
+    animation: waving 10s forwards;
+    max-width: 140px; /* Adjust the width as needed */
+}
+
+@keyframes walk-in {
+    0% {
+        right: -500px; /* Starting position off-screen to the right */
+    }
+    100% {
+        right: 0; /* Final position at the center of the screen */
+    }
+}
+
+@keyframes waving {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#welcome-text {
+    font-family: 'Press Start 2P', cursive; /* Change this to your preferred gaming font */
+    color: #F00; /* Change this to your preferred color */
+    font-size: 3em; /* Adjust size as needed */
+    position: fixed; /* Changed to fixed */
+    top: 15vh; /* This will position the text 15% of the height of the viewport from the top */
+    left: 50vw; /* This will position the text in the middle of the viewport's width */
+    transform: translate(-50%, -50%); /* This will center the text */
+    text-align: center;
+    display: none; /* Initially hidden */
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jason Godfrey About Me </title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1 id="welcome-text" style="display: none;">Welcome</h1>
+    <img id="gif" class="walking-animation" src="walking.gif" alt="Walking Animation">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const gif = document.getElementById("gif");
+            const welcomeText = document.getElementById("welcome-text");
+
+            gif.addEventListener("animationend", function () {
+                if (gif.classList.contains("walking-animation")) {
+                    gif.src = "waving.gif";
+                    gif.classList.remove("walking-animation");
+                    gif.classList.add("waving-animation");
+                }
+            });
+
+            // Display the welcome text exactly after 5 seconds from the page load
+            setTimeout(function () {
+                welcomeText.style.display = "block";
+            }, 5000); // 5000 milliseconds = 5 seconds
+        });
+    </script>
+</body>
+</html>
