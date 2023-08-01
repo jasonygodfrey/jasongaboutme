@@ -1,16 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
     const gif = document.getElementById("gif");
-
-    gif.addEventListener("animationend", function () {
-        gif.src = "waving.gif";
-        //setTimeout(function () {
-            //gif.style.display = "none"; // Hide the GIF after 0.5 seconds
-       // }, 500);
-    });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-    const gif = document.getElementById("gif");
     const welcomeText = document.getElementById("welcome-text");
 
     gif.addEventListener("animationend", function () {

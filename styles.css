@@ -51,3 +51,30 @@ body {
     text-align: center;
     display: none; /* Initially hidden */
 }
+
+#play-now {
+    font-family: 'Press Start 2P', cursive;
+    color: #B79F70;
+    background: url('buttondark.webp') no-repeat center center; /* Normal background image */
+    background-size: stretch; /* Ensure the image covers the entire button */
+    background-position: center; /* Center the background image */
+    font-size: 1.3em;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 15vh;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    transition: background 0.3s, color 0.3s; /* Optional: smooth transition effect */
+}
+
+#play-now:hover {
+    color: #e0c796;
+    background: url('buttonbright.webp') no-repeat center center; /* Bright background image when hovering */
+    background-size: stretch; /* Ensure the image covers the entire button */
+    background-position: center; /* Center the background image */
+}
+
+.play-icon {
+    vertical-align: 20%;  /* Adjust this value as needed */
+}
